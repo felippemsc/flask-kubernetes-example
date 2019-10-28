@@ -1,1 +1,25 @@
-# flask-kubernetes-example
+# flask-kubernetes-example:
+
+## Developing:
+
+Creating virtualenv and activating the virtualenv:
+
+```
+$ virtualenv -p python3.7 ~/envs/flaks-k8s
+$ source ~/envs/flaks-k8s/bin/activate
+```
+
+## Using minikube:
+
+```
+$ minikube start -p flask-example --cpus 2 --memory 1024
+$ kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.10 --port=8080
+$ kubectl expose deployment hello-minikube --type=NodePort
+$ kubectl get pod
+$ minikube service hello-minikube --url -p flask-example
+$ curl $(minikube service hello-minikube --url -p flask-example)
+$ minikube dashboard -p flask-example
+$ minikube stop -p flask-example
+$ minikube delete -p flask-example
+```
+
