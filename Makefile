@@ -1,2 +1,9 @@
 dev-env:
-	python setup.py build
+	pip install pipenv
+	pipenv install --system
+
+lock:
+	pipenv lock
+
+lint:
+	pylint --rcfile=pylintrc app

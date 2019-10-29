@@ -1,9 +1,13 @@
+"""
+APP Factory
+"""
 from flask import Flask, escape, request
 
-app = Flask(__name__)
+APP = Flask(__name__)
 
 
-@app.route('/')
+@APP.route('/')
 def hello():
+    """Handler for '/' route"""
     name = request.args.get("name", "World")
     return f'Hello, {escape(name)}!'
