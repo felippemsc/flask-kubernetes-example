@@ -5,5 +5,9 @@ dev-env:
 lock:
 	pipenv lock
 
+pre-commit:
+	pre-commit install
+	pre-commit run --all-files
+
 lint:
 	pylint --rcfile=pylintrc app

@@ -1,0 +1,16 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+-   repo: https://github.com/pre-commit/mirrors-pylint
+    rev: v2.4.3
+    hooks:
+    -   id: pylint
+
+default_language_version:
+    python: python3.7
+
+default_stages: [push]
