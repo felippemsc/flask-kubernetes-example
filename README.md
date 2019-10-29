@@ -5,8 +5,21 @@
 Creating virtualenv and activating the virtualenv:
 
 ```
-$ virtualenv -p python3.7 ~/envs/flaks-k8s
-$ source ~/envs/flaks-k8s/bin/activate
+$ virtualenv -p python3.7 ~/envs/flask-k8s
+$ source ~/envs/flask-k8s/bin/activate
+```
+
+Installing dependencies:
+
+```
+$ pip install pipenv
+$ pipenv install --system
+```
+
+Updating Pipfile.lock with new libs:
+
+```
+$ pipenv lock
 ```
 
 ## Using minikube:
