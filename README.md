@@ -12,14 +12,19 @@ $ source ~/envs/flask-k8s/bin/activate
 Installing dependencies:
 
 ```
-$ pip install pipenv
-$ pipenv install --system
+$ make dev-env
 ```
 
 Updating Pipfile.lock with new libs:
 
 ```
-$ pipenv lock
+$ make lock
+```
+
+After updating pre-commit hooks:
+
+```
+$ make pre-commit
 ```
 
 ## Using minikube:
@@ -37,8 +42,10 @@ $ minikube delete -p flask-example
 ```
 
 #### TODO:
-[ ] pre-commit
 [ ] Tests
+
 [ ] Nginx
+
 [ ] Kubernetes
-[ ] EKS
+
+[ ] EKS (Terraform)

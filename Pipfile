@@ -6,7 +6,8 @@ name = "pypi"
 [packages]
 flask = "*"
 gunicorn = "*"
-pylint = "*"
 
 [dev-packages]
 pytest = "*"
+pylint = "*"
+pre-commit = "*"
