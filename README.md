@@ -36,3 +36,9 @@ $ minikube stop -p flask-example
 $ minikube delete -p flask-example
 ```
 
+#### TODO:
+[ ] pre-commit
+[ ] Tests
+[ ] Nginx
+[ ] Kubernetes
+[ ] EKS
