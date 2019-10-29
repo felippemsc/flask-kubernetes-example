@@ -43,6 +43,12 @@ $ minikube delete -p flask-example
 
 #### TODO:
 [ ] Tests
+https://flask.palletsprojects.com/en/1.1.x/testing/
+https://docs.pytest.org/en/latest/fixture.html#fixtures
+
+[ ] Implement CI
+
+[ ] Coverage and build tags
 
 [ ] Nginx
 
