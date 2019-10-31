@@ -24,7 +24,7 @@ Updating Pipfile.lock with new libs:
 $ make lock
 ```
 
-After updating pre-commit hooks:
+Updating pre-commit hooks:
 
 ```
 $ make pre-commit
