@@ -7,6 +7,7 @@ APP = Flask(__name__)
 
 
 def format_response(name):
+    """Response formatter"""
     if name is None:
         name = "World"
 
