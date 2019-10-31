@@ -4,6 +4,7 @@ python: 3.7
 
 install:
   - pip install pipenv
+  - pip install codecov
   - pipenv install --dev
 
 script:

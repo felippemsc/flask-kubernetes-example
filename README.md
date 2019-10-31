@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/felippemsc/flask-kubernetes-example.svg?branch=master)](https://travis-ci.org/felippemsc/flask-kubernetes-example)
+
 # flask-kubernetes-example:
 
 ## Developing:
