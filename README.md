@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/felippemsc/flask-kubernetes-example.svg?branch=master)](https://travis-ci.org/felippemsc/flask-kubernetes-example)
+[![codecov](https://codecov.io/gh/felippemsc/flask-kubernetes-example/branch/master/graph/badge.svg)](https://codecov.io/gh/felippemsc/flask-kubernetes-example)
 
 # flask-kubernetes-example:
 
@@ -44,10 +45,6 @@ $ minikube delete -p flask-example
 ```
 
 #### TODO:
-[ ] Implement CI
-
-[ ] Coverage and build tags
-
 [ ] Nginx
 
 [ ] Kubernetes
