@@ -42,7 +42,9 @@ $ minikube delete -p flask-example
 ```
 
 #### TODO:
-[ ] Tests
+[ ] Implement CI
+
+[ ] Coverage and build tags
 
 [ ] Nginx
 

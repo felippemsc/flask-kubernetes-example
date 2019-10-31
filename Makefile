@@ -11,3 +11,6 @@ pre-commit:
 
 lint:
 	pylint --rcfile=pylintrc app
+
+check:
+	pytest --cov=app tests/

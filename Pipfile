@@ -8,6 +8,7 @@ flask = "*"
 gunicorn = "*"
 
 [dev-packages]
+pre-commit = "*"
 pytest = "*"
 pylint = "*"
-pre-commit = "*"
+pytest-cov = "*"
