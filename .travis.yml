@@ -7,7 +7,7 @@ install:
   - pipenv install --system
 
 script:
-  - pytest --cov=app tests/
+  - make check
 
 after_success:
   - codecov
