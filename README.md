@@ -45,8 +45,6 @@ $ minikube delete -p flask-example
 ```
 
 #### TODO:
-[ ] Nginx
-
 [ ] Kubernetes
 
 [ ] EKS (Terraform)
