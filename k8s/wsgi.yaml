@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wsgi
+spec:
+  selector:
+    app: wsgi
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+      name: http
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: wsgi
+spec:
+  backend:
+    serviceName: wsgi
+    servicePort: 5000
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: wsgi
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: wsgi
+        role: rolling-update
+    spec:
+      containers:
+      - name: wsgi
+        image: felippemsc/k8s-wsgi-example:test
+        ports:
+        - containerPort: 5000
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 5000
+  strategy:
+    type: RollingUpdate
+    rollingUp      maxSurge: 100%

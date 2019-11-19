@@ -14,3 +14,7 @@ lint:
 
 check:
 	pytest --cov=app tests/
+
+push:
+	docker build . -t felippemsc/k8s-wsgi-example:test
+	docker push felippemsc/k8s-wsgi-example:test
